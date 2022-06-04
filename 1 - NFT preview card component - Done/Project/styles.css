@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  /*Colors*/
+
+  /*Primary*/
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --cyan-hover: hsl(178, 100%, 50%, 0.5);
+
+  /*Neutral*/
+  --main-bg-color: hsl(217, 54%, 11%);
+  --card-bg: hsl(216, 50%, 16%);
+  --line: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+* {
+  font-family: Outfit;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--main-bg-color);
+  margin: 0;
+}
+
+.card-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.card {
+  background-color: var(--card-bg);
+  width: 350px;
+  border-radius: 15px;
+  padding: 25px;
+}
+
+.images {
+  position: relative;
+}
+
+.image-equilibrium {
+  border-radius: 5px;
+  width: 100%;
+}
+
+.images:hover .img-view-container-hover {
+  opacity: 1;
+}
+
+.img-view-container-hover {
+  border-radius: 5px;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cyan-hover);
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.details {
+  margin-top: 20px;
+}
+
+.title {
+  text-decoration: none;
+  color: var(--White);
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.title:hover {
+  color: var(--cyan);
+}
+
+.description p {
+  color: var(--soft-blue);
+  font-size: 18px;
+}
+
+.ethereum-date {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.ethereum {
+  color: var(--cyan);
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.ethereum-icon {
+  margin-right: 10px;
+}
+
+.date {
+  color: var(--soft-blue);
+  display: flex;
+  align-items: center;
+}
+
+.date-icon {
+  margin-right: 10px;
+}
+
+.creator-info {
+  display: flex;
+  align-items: center;
+  border-top: solid 1px var(--line);
+  padding-top: 10px;
+  margin-top: 25px;
+}
+
+.creator-info p {
+  color: var(--soft-blue);
+}
+
+.profile-img {
+  width: 35px;
+  margin-right: 20px;
+  border: solid 1px var(--White);
+  border-radius: 20px;
+}
+
+.creator-name {
+  color: var(--White);
+  text-decoration: none;
+}
+
+.creator-name:hover {
+  color: var(--cyan);
+}
